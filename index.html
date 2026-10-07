@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsive-ийн үндэс: дэлгэцийн өргөнийг төхөөрөмжийн өргөнтэй тааруулна -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Мэдээлэл холбоо технологийн их сургууль – Лаб 5</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Мэдээлэл холбоо технологийн их сургууль</a>
+
+      <!-- JavaScript-гүй гар утасны цэс: checkbox + label (hamburger) -->
+      <input class="nav-toggle" type="checkbox" id="nav-toggle">
+      <label class="nav-burger" for="nav-toggle" aria-label="Цэс нээх / хаах">
+        <span></span>
+      </label>
+
+      <nav class="main-nav" aria-label="Үндсэн цэс">
+        <ul class="nav-list">
+          <li><a class="nav-link is-active" href="#">Нүүр</a></li>
+          <li><a class="nav-link" href="#courses">Мэргэжил</a></li>
+          <li><a class="nav-link" href="#news">Мэдээ</a></li>
+          <li><a class="nav-link" href="#contact">Холбоо барих</a></li>
+        </ul>
+        <a class="btn" href="../lab03/index.html">Бүртгүүлэх</a>
+      </nav>
+    </div>
+
+    <div class="container hero">
+      <h1 class="hero-title">Мэдээлэл, холбооны технологийн сургууль</h1>
+      <p class="hero-text">ШУТИС нь орчин үеийн өөрчлөлт шинэчлэлт, инновац, технологи дамжуулалт, шинэ мэдлэгийг буй болгогч, инженерчлэл, инженерчлэлийн технологи чиглэлд давамгайлсан бакалаврын сургалтын хөтөлбөрүүдийг хэрэгжүүлж байна.</p>
+    </div>
+  </header>
+
+  <div class="container page">
+
+    <main class="content" id="courses">
+      <h2 class="section-title">Мэргэжлүүд</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <span class="tag">4 жил</span>
+          <h3 class="card-title">Мэдээллийн технологи</h3>
+          <p class="card-text">Сүлжээ, програм хангамж, цахим үйлчилгээний үндэс.</p>
+          <div class="card-meta"><span>120 кредит</span><a href="#">Дэлгэрэнгүй</a></div>
+        </article>
+
+        <article class="card">
+          <span class="tag">4 жил</span>
+          <h3 class="card-title">Мэдээллийн систем</h3>
+          <p class="card-text">Байгууллагын систем зохиомж, өгөгдлийн сангийн удирдлага.</p>
+          <div class="card-meta"><span>120 кредит</span><a href="#">Дэлгэрэнгүй</a></div>
+        </article>
+
+        <article class="card">
+          <span class="tag">4 жил</span>
+          <h3 class="card-title">Хиймэл оюун ухаан</h3>
+          <p class="card-text">Машин сургалт, ухаалаг системүүд.</p>
+          <div class="card-meta"><span>124 кредит</span><a href="#">Дэлгэрэнгүй</a></div>
+        </article>
+
+        <article class="card">
+          <span class="tag">4 жил</span>
+          <h3 class="card-title">Компьютерын ухаан</h3>
+          <p class="card-text">Алгоритм, өгөгдлийн бүтэц, үйлдлийн систем, програмчлал.</p>
+          <div class="card-meta"><span>125 кредит</span><a href="#">Дэлгэрэнгүй</a></div>
+        </article>
+
+        <article class="card">
+          <span class="tag">4 жил</span>
+          <h3 class="card-title">Өгөгдлийн ухаан</h3>
+          <p class="card-text">Өгөгдөл цуглуулах, боловсруулах, шинжлэх, загварчлах.</p>
+          <div class="card-meta"><span>120 кредит</span><a href="#">Дэлгэрэнгүй</a></div>
+        </article>
+
+        <article class="card">
+          <span class="tag">4 жил</span>
+          <h3 class="card-title">Кибер аюулгүй байдал</h3>
+          <p class="card-text">Сүлжээ, өгөгдлийн хамгаалалт, эрсдэлийн үнэлгээ.</p>
+          <div class="card-meta"><span>120 кредит</span><a href="#">Дэлгэрэнгүй</a></div>
+        </article>
+      </div>
+    </main>
+
+    <aside class="sidebar" id="news" aria-label="Нэмэлт мэдээлэл">
+      <section class="widget">
+        <h2 class="widget-title">Сүүлийн мэдээ</h2>
+        <ul class="news-list">
+          <li class="news-item">
+            <time datetime="2026-10-05">10-р сарын 5</time>
+            <a href="#">Элсэлтийн бүртгэл эхэллээ</a>
+          </li>
+          <li class="news-item">
+            <time datetime="2026-10-12">10-р сарын 12</time>
+            <a href="#">Хакатон тэмцээний зар</a>
+          </li>
+          <li class="news-item">
+            <time datetime="2026-10-20">10-р сарын 20</time>
+            <a href="#">Нээлттэй хаалганы өдөр</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="widget">
+        <h2 class="widget-title">Хурдан холбоос</h2>
+        <ul class="link-list">
+          <li><a href="#">Хичээлийн хуваарь</a></li>
+          <li><a href="#">Сурах бичиг</a></li>
+          <li><a href="#">Түгээмэл асуулт</a></li>
+        </ul>
+      </section>
+    </aside>
+
+  </div>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-inner">
+      <section>
+        <h2 class="footer-title">Холбоо барих</h2>
+        <p>Улаанбаатар хот, Сүхбаатар дүүрэг<br>Утас: 7711-2233<br>info@mts.edu.mn</p>
+      </section>
+      <section>
+        <h2 class="footer-title">Цэс</h2>
+        <p><a href="#">Нүүр</a><br><a href="#courses">Мэргэжил</a><br><a href="#news">Мэдээ</a></p>
+      </section>
+      <section>
+        <h2 class="footer-title">Ажлын цаг</h2>
+        <p>Даваа – Баасан<br>09:00 – 18:00</p>
+      </section>
+    </div>
+    <p class="copyright">© 2026 Мэдээлэл холбоо технологийн их сургууль</p>
+  </footer>
+
+</body>
+</html>
